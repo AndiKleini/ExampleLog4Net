@@ -24,7 +24,7 @@ private static ILoggerWrapper logger = LoggerFactory.GetLogger();
 
 The concrete ILoggerWrapper implementation Log4NetWrapper wraps around log4net Logger. It provides a static creator method that sets up a new instance properly.
 
-```
+```c#
 public static Log4NetWrapper CreateLogger(string configPath)
 {
      if (!File.Exists(configPath))
